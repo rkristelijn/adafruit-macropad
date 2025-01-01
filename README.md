@@ -1,5 +1,9 @@
 # My Adafruit Macropad set up
 
+![Lily58 next to Adafruit Macropad](./docs/IMG_0350.jpg)
+![](./docs/IMG_0351.jpg)
+![](./docs/IMG_0352.jpg)
+
 ## Set up 1: Flash firmware
 
 1. keep hold rotery encoder, click 'reset', keep holding rotery encode untill new drive mounts `RIP-RP2`
@@ -31,7 +35,7 @@ download [CircuitPython Bundle for Version 9.x](https://circuitpython.org/librar
 │   ├── adafruit_ticks.mpy
 │   └── neopixel.mpy
 └── macros
-    ├── 1-launch.py
+    ├── 1-launch.py # Read the comments to add the shortcut keys to your MacOS
     ├── 2-navigation-arrows-keys.py
     ├── 3-numpad.py
     ├── 4-function-keys.py
@@ -41,16 +45,20 @@ download [CircuitPython Bundle for Version 9.x](https://circuitpython.org/librar
     ├── 8-accents.py
     ├── 9-mouse.py
     ├── A-teams.py
+    ├── B-vsc.py
+    ├── C-windows.py # Using Amethyst and Rectangle
     └── zzz_blank.py
 ```
 
-## My CIRCUITPY FS is read only
+## Trouble shooting
+
+### My CIRCUITPY FS is read only
 
 1. hit reset
 2. hold the rotary encoder
 3. see boot.py why that is
 
-## Trouble shooting
+### Error: EROFS: read-only file system
 
 > Failed to save 'some-file.py': Unable to write file '/Volumes/CIRCUITPY/some-file.py' (Unknown (FileSystemError): Error: EROFS: read-only file system, open '/Volumes/CIRCUITPY/some-file.py')
 
@@ -67,7 +75,7 @@ download [CircuitPython Bundle for Version 9.x](https://circuitpython.org/librar
 
 [resource](https://forums.adafruit.com/viewtopic.php?t=173164)
 
-### my macro is not loading
+### My macro is not loading
 
 See the 'Serial' Button in [MU Editor](https://learn.adafruit.com/adafruit-macropad-rp2040/installing-mu-editor):
 
