@@ -11,7 +11,9 @@
 
 ## Set up 2: set up macros
 
-download [CircuitPython Bundle for Version 9.x](https://circuitpython.org/libraries)
+1. download [CircuitPython Bundle for Version 9.x](https://circuitpython.org/libraries)
+2. copy the files from this repo onto the CIRCUITPI drive
+    1. extract the libs from https://circuitpython.org/libraries 
 
 ```sh
 .
